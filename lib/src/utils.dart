@@ -55,7 +55,7 @@ extension ArbStringX<T extends String> on T {
   /// ```
   String smartlingToArbFormat([RegExp? regex]) {
     regex ??= RegExp(r'{{%(\d+)s}}');
-    return replaceAllMapped(regex, (match) => "{it${match.group(1)}}");
+    return replaceAllMapped(regex, (match) => "{s${match.group(1)}}");
   }
 }
 
