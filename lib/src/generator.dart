@@ -22,6 +22,9 @@ class Generator {
     final outputDir = Path.join(Directory.current.path, 'lib', 'l10n');
 
     for (final inputFile in inputFiles) {
+      if (Path.basenameWithoutExtension(inputFile.path) == "no-translation") {
+        continue;
+      }
       final outputFile =
       await File(Path.join(
         outputDir,
