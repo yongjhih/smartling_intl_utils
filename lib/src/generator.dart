@@ -32,7 +32,7 @@ class Generator {
       )).create(recursive: true);
       final Map<String, Map<String, dynamic>> smartlingJson =
       Map.castFrom(jsonDecode(inputFile.readAsStringSync()));
-      outputFile.writeAsStringSync(jsonEncode(smartlingJson.toArb()));
+      outputFile.writeAsStringSync(JsonEncoder.withIndent('  ').convert(smartlingJson.toArb()));
     }
 
     try {
