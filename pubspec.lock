@@ -232,13 +232,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
-  intl_generator:
+  intl_utils:
     dependency: "direct main"
     description:
-      name: intl_generator
+      name: intl_utils
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0+0"
+    version: "2.4.0"
   io:
     dependency: transitive
     description:
@@ -317,7 +317,7 @@ packages:
     source: hosted
     version: "1.8.0"
   pedantic:
-    dependency: "direct dev"
+    dependency: transitive
     description:
       name: pedantic
       url: "https://pub.dartlang.org"

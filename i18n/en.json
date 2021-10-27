@@ -1,0 +1,25 @@
+{
+  "smartling": {
+    "translate_paths": [
+      {
+        "character_limit": "/*/limit",
+        "path": "/*/translation",
+        "key": "/{*}/translation",
+        "instruction": "/*/note"
+      }
+    ],
+    "variants_enabled": "true"
+  },
+  "app_name": {
+    "translation": "My App"
+  },
+  "app_name_formatted": {
+    "translation": "My {{%1s}} App"
+  },
+  "app_name_formatted2": {
+    "translation": "My {{%1s}} {{%2s}} App"
+  },
+  "app_name_formatted_reversed": {
+    "translation": "My {{%2s}} {{%1s}} App"
+  }
+}

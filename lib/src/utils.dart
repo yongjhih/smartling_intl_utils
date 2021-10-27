@@ -25,6 +25,7 @@ List<String> getLocalesFromFiles(Iterable<File> files) =>
       .map((file) => file.locale)
       .toList();
 
+
 extension DirectoryX<T extends Directory> on T {
   List<File> listFilesSync() => listSync()
       .where((it) => FileSystemEntity.typeSync(it.path) == FileSystemEntityType.file)
@@ -54,7 +55,7 @@ extension ArbStringX<T extends String> on T {
   /// ```
   String smartlingToArbFormat([RegExp? regex]) {
     regex ??= RegExp(r'{{%(\d+)s}}');
-    return replaceAllMapped(regex, (match) => "{{it${match.group(1)}}}");
+    return replaceAllMapped(regex, (match) => "{it${match.group(1)}}");
   }
 }
 

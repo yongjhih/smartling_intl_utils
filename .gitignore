@@ -48,3 +48,6 @@ app.*.symbols
 app.*.map.json
 
 *.iml
+
+lib/generated/
+lib/l10n/
