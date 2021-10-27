@@ -42,15 +42,15 @@ class PubspecConfig {
         : null;
   }
 
-  bool? get enabled => _enabled;
+  bool get enabled => _enabled ?? true;
 
-  String? get className => _className;
+  String get className => _className ?? "S";
 
-  String? get mainLocale => _mainLocale;
+  String get mainLocale => _mainLocale ?? "en";
 
-  String? get inputDir => _inputDir;
+  String get inputDir => _inputDir ?? "i18n";
 
-  String? get outputDir => _outputDir;
+  String get outputDir => _outputDir ?? inputDir;
 
-  bool? get useDeferredLoading => _useDeferredLoading;
+  bool get useDeferredLoading => _useDeferredLoading ?? false;
 }

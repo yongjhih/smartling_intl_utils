@@ -21,8 +21,8 @@ List<FileSystemEntity> getSmartlingFiles(String folderName) =>
       ..sortBy((it) => it.path);
 
 /// {locale}.json
-List<String> getLocales(String folderName) =>
-    getSmartlingFiles(folderName)
+List<String> getLocalesFromFiles(Iterable<FileSystemEntity> files) =>
+    files
       .map((file) => Path.basename(file.path))
       .map((fileName) =>
       fileName.substring(0, fileName.length - '.json'.length))
