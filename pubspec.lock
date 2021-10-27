@@ -7,14 +7,14 @@ packages:
       name: _fe_analyzer_shared
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "26.0.0"
+    version: "22.0.0"
   analyzer:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: analyzer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.0"
+    version: "1.7.2"
   archive:
     dependency: "direct main"
     description:
@@ -168,7 +168,7 @@ packages:
       name: dart_style
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.0"
+    version: "2.1.1"
   file:
     dependency: transitive
     description:
@@ -232,6 +232,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
+  intl_generator:
+    dependency: "direct main"
+    description:
+      name: intl_generator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0+0"
   io:
     dependency: transitive
     description:
@@ -287,7 +294,7 @@ packages:
       name: mockito
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.16"
+    version: "5.0.15"
   node_preamble:
     dependency: transitive
     description:
@@ -317,7 +324,7 @@ packages:
     source: hosted
     version: "1.11.1"
   petitparser:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: petitparser
       url: "https://pub.dartlang.org"
@@ -378,7 +385,7 @@ packages:
       name: source_gen
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.1"
+    version: "1.0.3"
   source_map_stack_trace:
     dependency: transitive
     description:
