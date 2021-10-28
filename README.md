@@ -26,13 +26,13 @@ lib/generated/
 ```
 
 
-Once initialized the specific locale by the following code in somewhere:
+Once initialized with the specific locale by the following code in somewhere:
 
 ```dart
 await S.load(Locale("en"))
 ```
 
-We can just use the translation:
+We can now use the translations:
 
 ```dart
 Text(S.current.app_name)
@@ -63,5 +63,3 @@ MaterialApp(
 )
 ```
 
-
-ref. https://github.com/yongjhih/smartling_intl_utils
