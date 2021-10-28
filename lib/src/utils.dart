@@ -59,7 +59,7 @@ extension ArbStringX<T extends String> on T {
   }
 }
 
-extension SmartlingMapX<T extends Map<String, Map<String, dynamic>>> on T {
+extension SmartlingMapX<T extends Map<String, dynamic>> on T {
   /// ```
   /// {
   ///   "smartling": { {} }
@@ -67,12 +67,32 @@ extension SmartlingMapX<T extends Map<String, Map<String, dynamic>>> on T {
   ///   "key2": { "translation": "xxx" },
   /// }
   /// ```
-  Map<String, String> toArb() {
-    final Map<String, String> newJson = {};
-    remove("smartling");
+  Map<String, dynamic> toArb({bool placeholdersEnabled = true}) {
+    final Map<String, dynamic> newJson = {};
     for (final entity in entries) {
+      if (entity.key == "smartling") {
+        continue;
+      }
+      if (entity.key.startsWith(RegExp(r'@'))) {
+        continue;
+      }
       final String value = entity.value["translation"];
-      newJson[entity.key] = value.smartlingToArbFormat();
+      final String arbValue = value.smartlingToArbFormat();
+      newJson[entity.key] = arbValue;
+      if (placeholdersEnabled) {
+        final formats = RegExp(r'{(\w+)}').allMatches(arbValue);
+        if (formats.isNotEmpty) {
+          final Map<String, dynamic> placeholders = {};
+          for (final f in formats) {
+            if (f.group(1) != null) {
+              placeholders.putIfAbsent(f.group(1)!, () => <String, dynamic>{});
+            }
+          }
+          newJson["@${entity.key}"] = <String, dynamic>{
+            "placeholders": placeholders
+          };
+        }
+      }
     }
     return newJson;
   }

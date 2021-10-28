@@ -30,13 +30,13 @@ class Generator {
         outputDir,
         "intl_${Path.basenameWithoutExtension(inputFile.path).replaceAll(RegExp(r'-'), "_")}.arb",
       )).create(recursive: true);
-      final Map<String, Map<String, dynamic>> smartlingJson =
+      final Map<String, dynamic> smartlingJson =
       Map.castFrom(jsonDecode(inputFile.readAsStringSync()));
       outputFile.writeAsStringSync(JsonEncoder.withIndent('  ').convert(smartlingJson.toArb()));
     }
 
     try {
-      var generator = IntlUtils.Generator();
+      final generator = IntlUtils.Generator();
       await generator.generateAsync();
     } catch (e) {}
   }
