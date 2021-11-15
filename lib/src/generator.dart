@@ -17,6 +17,12 @@ import 'package:path/path.dart' as Path;
 
 /// smartling json to arb to intl with intl_utils
 class Generator {
+  const Generator({
+    this.missed = false,
+  });
+
+  final bool missed;
+
   Future<void> generate() async {
     final inputFiles = getSmartlingFiles("i18n");
     final outputDir = Path.join(Directory.current.path, 'lib', 'l10n');
@@ -37,6 +43,7 @@ class Generator {
 
     try {
       final generator = IntlUtils.Generator();
+      generator.missed = missed;
       await generator.generateAsync();
     } catch (e) {}
   }

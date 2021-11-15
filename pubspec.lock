@@ -235,10 +235,12 @@ packages:
   intl_utils:
     dependency: "direct main"
     description:
-      name: intl_utils
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.4.0"
+      path: "."
+      ref: c21dc36ef4ebecfafe1f0101378ba0cc83531510
+      resolved-ref: c21dc36ef4ebecfafe1f0101378ba0cc83531510
+      url: "https://github.com/yongjhih/intl_utils.git"
+    source: git
+    version: "2.4.1"
   io:
     dependency: transitive
     description:

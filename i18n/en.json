@@ -21,5 +21,11 @@
   },
   "app_name_formatted_reversed": {
     "translation": "My {{%2s}} {{%1s}} App"
+  },
+  "test_missing": {
+    "translation": "Test missing"
+  },
+  "test_missing_2": {
+    "translation": "Test missing {{%1s}}"
   }
 }
