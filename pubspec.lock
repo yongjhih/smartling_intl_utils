@@ -236,8 +236,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: c21dc36ef4ebecfafe1f0101378ba0cc83531510
-      resolved-ref: c21dc36ef4ebecfafe1f0101378ba0cc83531510
+      ref: "4fd4a89"
+      resolved-ref: "4fd4a8924317588133d60de6eea67907df0668bb"
       url: "https://github.com/yongjhih/intl_utils.git"
     source: git
     version: "2.4.1"
