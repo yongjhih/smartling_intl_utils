@@ -7,14 +7,14 @@ packages:
       name: _fe_analyzer_shared
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "22.0.0"
+    version: "24.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.7.2"
+    version: "2.1.0"
   archive:
     dependency: "direct main"
     description:
@@ -236,8 +236,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "4fd4a89"
-      resolved-ref: "4fd4a8924317588133d60de6eea67907df0668bb"
+      ref: "6660656"
+      resolved-ref: "6660656644c91462631590229231815e6e74877d"
       url: "https://github.com/yongjhih/intl_utils.git"
     source: git
     version: "2.4.1"
@@ -296,7 +296,7 @@ packages:
       name: mockito
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.15"
+    version: "5.2.0"
   node_preamble:
     dependency: transitive
     description:
