@@ -5,18 +5,18 @@ packages:
     dependency: transitive
     description:
       name: _fe_analyzer_shared
-      sha256: "98d1d33ed129b372846e862de23a0fc365745f4d7b5e786ce667fcbbb7ac5c07"
+      sha256: "4897882604d919befd350648c7f91926a9d5de99e67b455bf0917cc2362f4bb8"
       url: "https://pub.dev"
     source: hosted
-    version: "55.0.0"
+    version: "47.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
-      sha256: "881348aed9b0b425882c97732629a6a31093c8ff20fc4b3b03fb9d3d50a3a126"
+      sha256: "690e335554a8385bc9d787117d9eb52c0c03ee207a607e593de3c9d71b1cfe80"
       url: "https://pub.dev"
     source: hosted
-    version: "5.7.1"
+    version: "4.7.0"
   archive:
     dependency: "direct main"
     description:
@@ -77,10 +77,10 @@ packages:
     dependency: transitive
     description:
       name: build_resolvers
-      sha256: db49b8609ef8c81cca2b310618c3017c00f03a92af44c04d310b907b2d692d95
+      sha256: "687cf90a3951affac1bd5f9ecb5e3e90b60487f3d9cdc359bb310f8876bb02a6"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "2.0.10"
   build_runner:
     dependency: "direct dev"
     description:
@@ -173,10 +173,10 @@ packages:
     dependency: "direct main"
     description:
       name: dart_style
-      sha256: "5be16bf1707658e4c03078d4a9b90208ded217fb02c163e207d334082412f2fb"
+      sha256: "7a03456c3490394c8e7665890333e91ae8a49be43542b616e414449ac358acd4"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.5"
+    version: "2.2.4"
   file:
     dependency: transitive
     description:
@@ -252,11 +252,12 @@ packages:
   intl_utils:
     dependency: "direct main"
     description:
-      name: intl_utils
-      sha256: db392393fbf891e3eb32f6beb1928b00cdb33e3c54597fd5f5dc5c43e5ba601c
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.8.2"
+      path: "."
+      ref: "6f5569d"
+      resolved-ref: "6f5569d4e8c66ef8d4297ecdd89b68eafe495147"
+      url: "https://github.com/yongjhih/intl_utils.git"
+    source: git
+    version: "2.6.1"
   io:
     dependency: transitive
     description:
@@ -421,10 +422,10 @@ packages:
     dependency: transitive
     description:
       name: source_gen
-      sha256: c2bea18c95cfa0276a366270afaa2850b09b4a76db95d546f3d003dcc7011298
+      sha256: "2d79738b6bbf38a43920e2b8d189e9a3ce6cc201f4b8fc76be5e4fe377b1c38d"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.7"
+    version: "1.2.6"
   source_map_stack_trace:
     dependency: transitive
     description:
