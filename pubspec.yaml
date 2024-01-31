@@ -18,7 +18,7 @@ dependencies:
   intl_utils:
     git:
       url: https://github.com/yongjhih/intl_utils.git
-      ref: "9601a98"
+      ref: "8e273d8"
 
 dev_dependencies:
   build_runner: ^2.0.6
