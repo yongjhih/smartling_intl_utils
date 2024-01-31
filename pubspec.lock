@@ -253,11 +253,11 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "8e273d8"
-      resolved-ref: "8e273d813672e137de985af6303428ade5aefbb4"
+      ref: "5178b92"
+      resolved-ref: "5178b92bea44117af5493030f3dc03bcf8fd6117"
       url: "https://github.com/yongjhih/intl_utils.git"
     source: git
-    version: "2.6.1"
+    version: "2.8.0"
   io:
     dependency: transitive
     description:
